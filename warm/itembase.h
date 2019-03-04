@@ -1,7 +1,7 @@
 #pragma once
 #include "map.h"
 
-class ItemBase
+class ItemBase:private UnCopyable
 {
 public:
 	ItemBase(const Point & position,const State & new_state)
